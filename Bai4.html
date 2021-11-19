@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="result1"></h1>
+<i><p id="result2"></p></i>
+<b><p id="result3"></p></b>
+<script>
+    function checkNumber() {
+        let arrLength = +prompt("NHẬP SỐ LƯỢNG PHẦN TỬ")
+        let arr = [];
+        let countDiv1 = 0;
+        let countDiv2 = 0;
+        let countDiv3 = 0;
+
+        for (let i = 0; i < arrLength; i++) {
+            arr[i] = +prompt("NHẬP SỐ PHẦN TỬ " + (i + 1))
+        }
+        console.log(arr)
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 15 === 0) {
+                countDiv1++
+                countDiv2++
+            } else if (arr[i] % 3 === 0) {
+                countDiv1++
+            } else if (arr[i] % 5 === 0) {
+                countDiv2++
+            } else {
+                countDiv3++
+            }
+
+
+</script>
+</body>
+</html>
